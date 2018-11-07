@@ -48,7 +48,7 @@ int main(void)
 	wdt_enable(WDTO_120MS);
 	
 	sei();
-	
+    
 	while(1)
 	{
 		; // Do nothing
