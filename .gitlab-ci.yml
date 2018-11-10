@@ -1,0 +1,13 @@
+image: registry.gitlab.com/dcs-docker-images/ubuntu-make:0.0.1
+
+stages:
+  - makefile
+
+makefile:
+  stage: makefile
+  script:
+    - make
+  artifacts:
+    paths:
+      - ./build
+    expire_in: 3 days
